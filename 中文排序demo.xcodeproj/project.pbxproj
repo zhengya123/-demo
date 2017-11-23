@@ -15,6 +15,11 @@
 		C71F0CCC1FC6C3E900C9A7C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C71F0CCA1FC6C3E900C9A7C0 /* LaunchScreen.storyboard */; };
 		C71F0CD71FC6C3EA00C9A7C0 /* ____demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C71F0CD61FC6C3EA00C9A7C0 /* ____demoTests.m */; };
 		C71F0CE21FC6C3EA00C9A7C0 /* ____demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C71F0CE11FC6C3EA00C9A7C0 /* ____demoUITests.m */; };
+		C71F0CF61FC6C3F800C9A7C0 /* NSArray+UnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = C71F0CF11FC6C3F800C9A7C0 /* NSArray+UnicodeReadable.m */; };
+		C71F0CF71FC6C3F800C9A7C0 /* NSDictionary+UnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = C71F0CF31FC6C3F800C9A7C0 /* NSDictionary+UnicodeReadable.m */; };
+		C71F0CF81FC6C3F800C9A7C0 /* NSSet+UnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = C71F0CF51FC6C3F800C9A7C0 /* NSSet+UnicodeReadable.m */; };
+		C71F0CFC1FC6C43400C9A7C0 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = C71F0CFB1FC6C43400C9A7C0 /* ChineseString.m */; };
+		C71F0CFF1FC6C43B00C9A7C0 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = C71F0CFD1FC6C43B00C9A7C0 /* pinyin.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,16 @@
 		C71F0CDD1FC6C3EA00C9A7C0 /* 中文排序demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "中文排序demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C71F0CE11FC6C3EA00C9A7C0 /* ____demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____demoUITests.m"; sourceTree = "<group>"; };
 		C71F0CE31FC6C3EA00C9A7C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C71F0CF01FC6C3F800C9A7C0 /* NSArray+UnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+UnicodeReadable.h"; sourceTree = "<group>"; };
+		C71F0CF11FC6C3F800C9A7C0 /* NSArray+UnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+UnicodeReadable.m"; sourceTree = "<group>"; };
+		C71F0CF21FC6C3F800C9A7C0 /* NSDictionary+UnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+UnicodeReadable.h"; sourceTree = "<group>"; };
+		C71F0CF31FC6C3F800C9A7C0 /* NSDictionary+UnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+UnicodeReadable.m"; sourceTree = "<group>"; };
+		C71F0CF41FC6C3F800C9A7C0 /* NSSet+UnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+UnicodeReadable.h"; sourceTree = "<group>"; };
+		C71F0CF51FC6C3F800C9A7C0 /* NSSet+UnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+UnicodeReadable.m"; sourceTree = "<group>"; };
+		C71F0CFA1FC6C43400C9A7C0 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		C71F0CFB1FC6C43400C9A7C0 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		C71F0CFD1FC6C43B00C9A7C0 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		C71F0CFE1FC6C43B00C9A7C0 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +116,8 @@
 		C71F0CBB1FC6C3E900C9A7C0 /* 中文排序demo */ = {
 			isa = PBXGroup;
 			children = (
+				C71F0CF91FC6C42100C9A7C0 /* Pinyin */,
+				C71F0CEF1FC6C3F800C9A7C0 /* UnicodeReadable */,
 				C71F0CBF1FC6C3E900C9A7C0 /* AppDelegate.h */,
 				C71F0CC01FC6C3E900C9A7C0 /* AppDelegate.m */,
 				C71F0CC21FC6C3E900C9A7C0 /* ViewController.h */,
@@ -138,6 +155,30 @@
 				C71F0CE31FC6C3EA00C9A7C0 /* Info.plist */,
 			);
 			path = "中文排序demoUITests";
+			sourceTree = "<group>";
+		};
+		C71F0CEF1FC6C3F800C9A7C0 /* UnicodeReadable */ = {
+			isa = PBXGroup;
+			children = (
+				C71F0CF01FC6C3F800C9A7C0 /* NSArray+UnicodeReadable.h */,
+				C71F0CF11FC6C3F800C9A7C0 /* NSArray+UnicodeReadable.m */,
+				C71F0CF21FC6C3F800C9A7C0 /* NSDictionary+UnicodeReadable.h */,
+				C71F0CF31FC6C3F800C9A7C0 /* NSDictionary+UnicodeReadable.m */,
+				C71F0CF41FC6C3F800C9A7C0 /* NSSet+UnicodeReadable.h */,
+				C71F0CF51FC6C3F800C9A7C0 /* NSSet+UnicodeReadable.m */,
+			);
+			path = UnicodeReadable;
+			sourceTree = "<group>";
+		};
+		C71F0CF91FC6C42100C9A7C0 /* Pinyin */ = {
+			isa = PBXGroup;
+			children = (
+				C71F0CFA1FC6C43400C9A7C0 /* ChineseString.h */,
+				C71F0CFB1FC6C43400C9A7C0 /* ChineseString.m */,
+				C71F0CFD1FC6C43B00C9A7C0 /* pinyin.c */,
+				C71F0CFE1FC6C43B00C9A7C0 /* pinyin.h */,
+			);
+			path = Pinyin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,9 +317,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C71F0CFF1FC6C43B00C9A7C0 /* pinyin.c in Sources */,
 				C71F0CC41FC6C3E900C9A7C0 /* ViewController.m in Sources */,
 				C71F0CC11FC6C3E900C9A7C0 /* AppDelegate.m in Sources */,
+				C71F0CF61FC6C3F800C9A7C0 /* NSArray+UnicodeReadable.m in Sources */,
+				C71F0CF81FC6C3F800C9A7C0 /* NSSet+UnicodeReadable.m in Sources */,
+				C71F0CF71FC6C3F800C9A7C0 /* NSDictionary+UnicodeReadable.m in Sources */,
 				C71F0CBE1FC6C3E900C9A7C0 /* main.m in Sources */,
+				C71F0CFC1FC6C43400C9A7C0 /* ChineseString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
